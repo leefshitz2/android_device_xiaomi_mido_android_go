@@ -359,6 +359,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.zram \
+    init.goodix.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
