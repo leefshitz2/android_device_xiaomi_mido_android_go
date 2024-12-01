@@ -157,6 +157,7 @@ ro.hw_timeout_multiplier=12
 
 # WiFi
 persist.mm.sta.enable=0
+wifi.interface=wlan0
 
 # WFD
 persist.hwc.enable_vds=1
