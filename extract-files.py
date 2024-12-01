@@ -49,10 +49,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     'vendor/lib/libtrueportrait.so': blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-    'vendor/lib/libts_detected_face_hal.so': blob_fixup()
-        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-    'vendor/lib/libts_face_beautify_hal.so': blob_fixup()
-        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib/libubifocus.so': blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib64/libdlbdsservice.so': blob_fixup()
