@@ -69,6 +69,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('fakelogprint.so'),
     'system_ext/lib64/lib-imsvideocodec.so': blob_fixup()
         .add_needed('libgui_shim.so')
+        .replace_needed('libqdMetaData.so', 'libqdMetaData.system.so'),
 }  # fmt: skip
 
 # Define the module
