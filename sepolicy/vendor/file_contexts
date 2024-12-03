@@ -66,3 +66,6 @@
 
 # Vibrator
 /sys/module/qti_haptics/parameters/vmax_mv_override          u:object_r:sysfs_vibrator:s0
+
+# Wifi
+/(vendor|system/vendor)/bin/wcnss_service_xiaomi             u:object_r:wcnss_service_exec:s0
