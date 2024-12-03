@@ -13,6 +13,14 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
+namespace_imports = [
+    'device/xiaomi/mido',
+    'hardware/qcom-caf/msm8953',
+    'vendor/qcom/opensource/dataservices',
+    'vendor/qcom/opensource/commonsys/display',
+    'vendor/qcom/opensource/display',
+]
+
 # Define the blob fixups
 blob_fixups: blob_fixups_user_type = {
     'vendor/bin/gx_fpd': blob_fixup()
@@ -81,6 +89,7 @@ module = ExtractUtilsModule(
     'mido',
     'xiaomi',
     blob_fixups=blob_fixups,
+    namespace_imports=namespace_imports,
 )
 
 if __name__ == '__main__':
