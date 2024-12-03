@@ -8,6 +8,10 @@ from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
 )
+from extract_utils.fixups_lib import (
+    lib_fixups,
+    lib_fixups_user_type,
+)
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
@@ -20,6 +24,17 @@ namespace_imports = [
     'vendor/qcom/opensource/commonsys/display',
     'vendor/qcom/opensource/display',
 ]
+
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    (
+        'com.qualcomm.qti.dpm.api@1.0',
+        'libmmosal',
+        'vendor.qti.imsrtpservice@3.0',
+    ): lib_fixup_vendor_suffix,
+}
 
 # Define the blob fixups
 blob_fixups: blob_fixups_user_type = {
@@ -89,6 +104,7 @@ module = ExtractUtilsModule(
     'mido',
     'xiaomi',
     blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
 
