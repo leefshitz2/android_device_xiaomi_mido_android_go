@@ -67,6 +67,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(r'system/etc/', r'vendor/etc/'),
     ('vendor/lib64/hw/fingerprint.goodix.so', 'gxfingerprint.default.so'): blob_fixup()
         .add_needed('fakelogprint.so'),
+    'system_ext/lib64/lib-imscamera.so': blob_fixup()
+        .add_needed('libgui_shim.so'),
     'system_ext/lib64/lib-imsvideocodec.so': blob_fixup()
         .add_needed('libgui_shim.so')
         .replace_needed('libqdMetaData.so', 'libqdMetaData.system.so'),
