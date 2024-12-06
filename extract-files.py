@@ -99,6 +99,8 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/lib-imsvideocodec.so': blob_fixup()
         .add_needed('libgui_shim.so')
         .replace_needed('libqdMetaData.so', 'libqdMetaData.system.so'),
+     ('vendor/lib/libmmcamera_dbg.so', 'libmmcamera_pdafcamif.so', 'libmmcamera_pdaf.so', 'libmmcamera_imx258_mono.so', 'libjpegehw.so', 'libjpegdhw.so', 'libmmcamera_hdr_gb_lib', 'libmmcamera_imx258_ofilm', 'libmmcamera_imx258_sunny', 'libmmcamera2_sensor_modules.so', 'libjpegdmahw.so', 'libmmcamera_imx258.so', 'libmmcamera_imx258_qtech.so', 'libmmcamera_le2464c_master_eeprom', 'libmmcamera_tintless_bg_pca_algo.so', 'libqomx_jpegenc.so', 'libqomx_jpegdec.so', 'libqomx_jpegenc_pipe.so') : blob_fixup()
+        .add_needed('liblog.so'),
 }  # fmt: skip
 
 # Define the module
