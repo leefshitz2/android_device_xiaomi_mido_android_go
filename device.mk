@@ -209,6 +209,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi_mido \
     fakelogprint \
+    libbinder_shim \
     liblzma.vendor:64 \
     libshims_gxfpd
 
