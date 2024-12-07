@@ -86,10 +86,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib64/libfpservice.so': blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
-    'vendor/lib64/libril-qc-hal-qmi.so': blob_fixup()
-        .regex_replace(r'android.hardware.radio.config@1.0.so', r'android.hardware.radio.c_shim@1.0.so')
-        .regex_replace(r'android.hardware.radio.config@1.1.so', r'android.hardware.radio.c_shim@1.1.so')
-        .regex_replace(r'android.hardware.radio.config@1.2.so', r'android.hardware.radio.c_shim@1.2.so'),
     'vendor/lib64/libthermalfeature.so': blob_fixup()
         .regex_replace(r'system/etc/', r'vendor/etc/'),
     ('vendor/lib64/hw/fingerprint.goodix.so', 'gxfingerprint.default.so'): blob_fixup()
