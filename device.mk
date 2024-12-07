@@ -202,7 +202,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-impl-qti \
+    android.hardware.gnss@2.1-impl-qti:64 \
     android.hardware.gnss@2.1-service-qti \
     gps.conf \
     flp.conf \
@@ -215,9 +215,9 @@ PRODUCT_PACKAGES += \
     liblocation_api_headers \
     libgps.utils_headers \
     liblocation_api \
-    libbatching \
-    libgeofencing \
-    libgnss
+    libbatching:64 \
+    libgeofencing:64 \
+    libgnss:64
 
 # Health
 PRODUCT_PACKAGES += \
