@@ -29,7 +29,6 @@ cc_library_shared {
     vendor: true
 }
 
-
 // Goodix
 cc_library_shared {
     name: "fakelogprint",
