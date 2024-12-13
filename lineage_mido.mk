@@ -38,6 +38,6 @@ BOARD_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="mido-user 7.0 NRD90M V9.6.1.0.NCFMIFD release-keys" \
-    BuildFingerprint="xiaomi/mido/mido:7.0/NRD90M/V9.6.1.0.NCFMIFD:user/release-keys" \
+    BuildDesc="mido-user 7.0 NRD90M V11.0.2.0.NCFMIXM release-keys" \
+    BuildFingerprint="xiaomi/mido/mido:7.0/NRD90M/V11.0.2.0.NCFMIXM:user/release-keys" \
     DeviceProduct=mido
