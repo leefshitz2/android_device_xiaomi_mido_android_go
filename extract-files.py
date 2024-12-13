@@ -76,14 +76,17 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('fakelogprint.so'),
     'vendor/lib64/libfpservice.so': blob_fixup()
         .add_needed('libbinder_shim.so'),
-    ('vendor/lib64/hw/fingerprint.goodix.so', 'gxfingerprint.default.so'): blob_fixup()
+    ('vendor/lib64/hw/fingerprint.goodix.so', 'vendor/lib64/gxfingerprint.default.so'): blob_fixup()
         .add_needed('fakelogprint.so'),
     # Fingerprint - liblog dep.
     ('vendor/lib64/libfp_client.so', 'libfpservice.so'): blob_fixup()
         .add_needed('liblog.so'),
     # Fingerprint - libstdc++.so' -> 'libstdc++_vendor.so
-    ('vendor/lib64/libfp_client.so', 'vendor/lib64/libfpservice.so', 'vendor/lib64/libfpnav.so'): blob_fixup()
+    ('vendor/lib64/libfp_client.so', 'vendor/lib64/libfpservice.so', 'vendor/lib64/libfpnav.so', 'vendor/lib64/hw/fingerprint.goodix.so', 'vendor/lib64/gxfingerprint.default.so'): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    # Fingerprint - so name fixups
+    ('vendor/lib64/hw/fingerprint.goodix.so', 'vendor/lib64/hw/gxfingerprint.default.so'):blob_fixup()
+        .fix_soname(),
     # IMS
     'system_ext/lib64/lib-imscamera.so': blob_fixup()
         .add_needed('libgui_shim.so'),
