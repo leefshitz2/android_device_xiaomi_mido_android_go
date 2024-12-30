@@ -38,7 +38,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_PROPERTY_OVERRIDES += fw.max_users=1
+PRODUCT_PROPERTY_OVERRIDES += \
+    fw.max_users=1
+    dalvik.vm.foreground-heap-growth-multiplier=2.0
 
 # RRO (Runtime Resource Overlay)
 PRODUCT_ENFORCE_RRO_TARGETS := *
