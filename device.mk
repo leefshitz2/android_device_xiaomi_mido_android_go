@@ -393,3 +393,12 @@ PRODUCT_PACKAGES += \
     firmware_WCNSS_wlan_dictionary.dat_symlink
 
 PRODUCT_PACKAGES += Launcher3QuickStepGo
+
+PRODUCT_PACKAGES += disable_configstore
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
+    ro.surface_flinger.has_HDR_display=false \
+    ro.surface_flinger.has_wide_color_display=false \
+    ro.surface_flinger.start_graphics_allocator_service=true \
+    ro.surface_flinger.use_context_priority=true
