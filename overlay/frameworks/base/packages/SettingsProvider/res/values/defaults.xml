@@ -20,7 +20,11 @@
 
     <!-- Set the automatic brightness mode on by default -->
     <bool name="def_screen_brightness_automatic_mode">true</bool>
-
+    
+    <bool name="def_bluetooth_on">false</bool>
+    
+    <bool name="def_accelerometer_rotation">false</bool>
+    
     <!-- Disable bluetooth by default -->
     <bool name="def_bluetooth_on">false</bool>
 
