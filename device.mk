@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+$(call inherit-product, build/make/target/product/go_defaults_512.mk)
 $(call inherit-product, vendor/xiaomi/mido/mido-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
