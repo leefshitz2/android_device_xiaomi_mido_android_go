@@ -387,3 +387,5 @@ PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink \
     firmware_WCNSS_qcom_wlan_nv.bin_symlink \
     firmware_WCNSS_wlan_dictionary.dat_symlink
+
+PRODUCT_PACKAGES += Launcher3QuickStepGo
