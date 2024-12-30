@@ -31,6 +31,10 @@
     <!-- Launcher Go customization requires AppWidgetService, but otherwise
     home screen widgets are not supported -->
     <bool name="config_enableAppWidgetService">true</bool>
+
+    <!-- True if the device supports at least one form of multi-window.
+    E.g. freeform, split-screen, picture-in-picture. -->
+    <bool name="config_supportsMultiWindow">false</bool>
     
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N  1 zones as follows:
