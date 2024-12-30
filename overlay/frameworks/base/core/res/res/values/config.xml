@@ -498,4 +498,13 @@
     <item name="config_highResTaskSnapshotScale" format="float" type="dimen">0.8</item>
     <item name="config_lowResTaskSnapshotScale" format="float" type="dimen">0.3</item>
     <bool name="config_use16BitTaskSnapshotPixelFormat">true</bool>
+
+    <!-- The minimum number of visible recent tasks to be presented to the user through the
+    SystemUI. Can be -1 if there is no minimum limit. -->
+    <integer name="config_minNumVisibleRecentTasks_lowRam">-1</integer>
+
+    <!-- The maximum number of visible recent tasks to be presented to the user through the
+         SystemUI. Can be -1 if there is no maximum limit. -->
+    <integer name="config_maxNumVisibleRecentTasks_lowRam">4</integer>
+    
 </resources>
