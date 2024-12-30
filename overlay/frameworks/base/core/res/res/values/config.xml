@@ -35,6 +35,15 @@
     <!-- True if the device supports at least one form of multi-window.
     E.g. freeform, split-screen, picture-in-picture. -->
     <bool name="config_supportsMultiWindow">false</bool>
+
+    <!-- Whether UI for multi user should be shown -->
+    <bool name="config_enableMultiUserUI">false</bool>
+
+    <!--  Maximum number of supported users -->
+    <integer name="config_multiuserMaximumUsers">1</integer>
+
+    <!-- Maximum number of users we allow to be running at a time -->
+    <integer name="config_multiuserMaxRunningUsers">1</integer>
     
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N  1 zones as follows:
